@@ -1,0 +1,18 @@
+nations: ["Iranian", "English","Arabic"]
+raw_data_path: 'data/names/'
+data_split:
+  "train": .7
+  "test": .2
+
+device: "default"
+criterion: "NLLLoss"
+learning_rate: 0.001
+optimizer: "Adam"
+arch: "LSTM"
+n_hidden: 128
+n_layers: 1
+n_batch: 1
+n_max_len: 16
+x_train: .8
+x_test: .2
+n_test: 100000
